@@ -1,0 +1,36 @@
+<body>
+  <h2>Login Page</h2>
+<form>
+
+    <table  class="table table-bordered table-hover">
+        <tr>
+          <td>user name</td>
+          <td>
+          <input type="text" class="form-control" [(ngModel)]="username" name="username" required="required" pattern="" title="">
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+          <input type="text" class="form-control" [(ngModel)]="password" name="password" required="required" pattern="" title="">
+          </td>
+        </tr>
+        <tr>
+          <td>UserType</td>
+          <td>
+          <input type="text" class="form-control" [(ngModel)]="userType" name="userType" required="required" pattern="" title="">
+          </td>
+        </tr>
+      </table>
+
+    <br>
+   
+    <div class="middle">
+    <button class="btn btn-primary" (click)="Login()">Login</button>
+    </div>
+    <button class="nav-item nav-link-edit" [routerLink]="['/signup']"><h2>new user signup</h2></button >
+
+  </form>
+
+
+</body>

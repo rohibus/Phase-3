@@ -1,0 +1,56 @@
+<form>
+
+    <table  class="table table-bordered table-hover">
+        <tr>
+            <td>ID</td>
+            <td>
+            <input type="number" class="form-control" [(ngModel)]="id" name="id" required="required" pattern="" title="">
+            </td>
+          </tr>
+        <tr>
+          <td>user name</td>
+          <td>
+          <input type="text" class="form-control" [(ngModel)]="username" name="username" required="required" pattern="" title="">
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+          <input type="password" class="form-control" [(ngModel)]="password" name="password" required="required" pattern="" title="">
+          </td>
+        </tr>
+        <tr>
+          <td>UserType</td>
+          <td>
+          <input type="text" class="form-control" [(ngModel)]="usertype" name="usertype" required="required" pattern="" title="">
+          </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+            <input type="email" class="form-control" [(ngModel)]="email" name="usertype" required="required" pattern="" title="">
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td>
+            <input type="number" class="form-control" [(ngModel)]="mobile" name="mobile" required="required" pattern="" title="">
+            </td>
+        </tr>
+      </table>
+
+    <br>
+   
+    <div class="middle">
+    <button class="btn btn-primary" (click)="Add()">Login</button>
+    </div>
+    
+
+  </form>
+
+
+
+<br>  
+<br>
+<br>
+<button class="btn btn-primary" [routerLink]="['/Login']" >Back</button>

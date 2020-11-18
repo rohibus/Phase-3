@@ -1,0 +1,117 @@
+
+<h2>Manage Company list</h2>
+
+<body>
+    <form>
+
+            <div class="form-group">
+        
+                <label for="exampleInputEmail1">Company ID :</label>
+        
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="companyId" [(ngModel)]="companyId" >
+        
+              </div>
+        
+        
+        
+            <div class="form-group">
+        
+              <label for="exampleInputEmail1">Company Name:</label>
+        
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="companyName" [(ngModel)]="companyName" >
+        
+            </div>
+        
+          
+        
+            <br>
+        
+            <div class="form-group">
+        
+              <label for="exampleInputPassword1">TurnOver :</label>
+        
+              <input type="number" class="form-control" id="exampleInputPassword1" name="turnover"  [(ngModel)]="turnover">
+        
+            </div>
+        
+            <br>
+        
+            <div class="form-group">
+        
+                <label for="exampleInputEmail1">CEO    :</label>
+        
+                <input type="text" class="form-control" id="exampleInputPassword1" name="ceo"  [(ngModel)]="ceo" >
+        
+              </div>
+        
+              <br>
+        
+        
+        
+              <div class="form-group">
+        
+                <label for="exampleInputEmail1">BoardOfDirectors   :</label>
+        
+                <input type="text" class="form-control" id="exampleInputPassword1" name="boardOfDirectors"  [(ngModel)]="boardOfDirectors" >
+        
+              </div>
+        
+              <br>
+        
+        
+        
+              <div class="form-group">
+        
+                <label for="exampleInputEmail1">ListedInStockExchange :</label>
+        
+                <input type="number" class="form-control" id="exampleInputPassword1" name="listedInStockExchange"  [(ngModel)]="listedInStockExchange" >
+        
+              </div>
+        
+              <br>
+
+        <div class="form-group">
+        
+                    <label for="exampleInputEmail1">Sector   :</label>
+            
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="sector"  [(ngModel)]="sector">
+            
+                  </div>
+            
+                  <br>
+
+            <div class="form-group">
+        
+                        <label for="exampleInputEmail1">BriefWriteup :</label>
+                
+                        <input type="text" class="form-control" id="exampleInputPassword1" name="briefWriteup"  [(ngModel)]="briefWriteup">
+                
+                      </div>
+                
+                      <br>
+        
+                
+                <div class="form-group">
+        
+                            <label for="exampleInputEmail1">CompanyStockCode :</label>
+                    
+                            <input type="number" class="form-control" id="exampleInputPassword1" name="companyStockCode"  [(ngModel)]="companyStockCode" >
+                    
+                          </div>
+                    
+                          <br>
+        
+        
+            <div class="middle">
+        
+            <button  class="btn btn-primary" (click)="addcompany()">Add_Company</button>
+          <button  class="btn btn-primary" (click)="updatecompany()">Update_Company</button>
+        
+            </div>
+        
+          </form>
+
+        <br>
+<br>
+<br>
+<button class="btn btn-primary" [routerLink]="['/adminlogin']" >Back</button>

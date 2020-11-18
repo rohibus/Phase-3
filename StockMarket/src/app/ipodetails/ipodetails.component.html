@@ -1,0 +1,77 @@
+<h2>Update IPO details</h2>
+
+<form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Ipo Id:</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ip" [(ngModel)]="id" placeholder="IPO ID">
+          </div>
+    
+        <div class="form-group">
+    
+          <label for="exampleInputEmail1">Company Name:</label>
+    
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="companyname" [(ngModel)]="companyName" placeholder="company name">
+    
+        </div>
+    
+
+        <div class="form-group">
+    
+          <label for="exampleInputPassword1">Stock Exchange :</label>
+    
+          <input type="text" class="form-control" id="exampleInputPassword1" name="stockexchange"  [(ngModel)]="stockExchange" placeholder="stock Exchange">
+    
+        </div>
+
+        <div class="form-group">
+    
+            <label for="exampleInputEmail1">Price per Share    :</label>
+    
+            <input type="number" class="form-control" id="exampleInputPassword1" name="price"  [(ngModel)]="pricePerShare" placeholder="pricePerShare">
+    
+          </div>
+
+    <div class="form-group">
+    
+                <label for="exampleInputEmail1">Total Share    :</label>
+        
+                <input type="number" class="form-control" id="exampleInputPassword1" name="totalShares"  [(ngModel)]="totalNoOfShares" placeholder="totalShares">
+        
+              </div>
+
+        <div class="form-group">
+    
+                    <label for="exampleInputEmail1">Date    :</label>
+            
+                    <input type="Date" class="form-control" id="exampleInputPassword1" name="date"  [(ngModel)]="openDateTime" placeholder="openDate">
+            
+                  </div>
+    
+ 
+    
+          <div class="form-group">
+    
+            <label for="exampleInputEmail1">Remarks   :</label>
+    
+            <input type="text" class="form-control" id="exampleInputPassword1" name="remarks"  [(ngModel)]="remarks" placeholder="remarks">
+    
+          </div>
+    
+    
+
+    
+        <div class="middle">
+    
+        <button type="submit" class="btn btn-primary" (click)="addIPO()">Add IPO</button>
+   
+    </div>
+    
+      </form>
+
+
+
+    
+    <br>
+    <br>
+    <br>
+    <button class="btn btn-primary" [routerLink]="['/adminlogin']" >Back</button>
